@@ -21,22 +21,3 @@ export default defineConfig(({ mode }) => {
       }
     };
 });
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-export default defineConfig({
-  plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: ['react-is'], // Add this line
-      output: {
-        globals: {
-          'react-is': 'ReactIs'
-        }
-      }
-    }
-  },
-  optimizeDeps: {
-    include: ['react-is', 'recharts'] // Pre-bundle these
-  }
-});
