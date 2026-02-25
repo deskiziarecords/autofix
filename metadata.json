@@ -1,0 +1,8 @@
+{
+  "name": "AutoFix Pro - Workshop Management",
+  "description": "An end-to-end automotive workshop management system featuring AI-powered OCR for license plates, part identification, and automated client communication flows.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
